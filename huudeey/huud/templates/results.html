@@ -1,0 +1,29 @@
+{% extends "base_generic.html" %}
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 216a4bb38ccbaad1f656463f8a37f6a95f916389
+{% autoescape on %}
+{% block content %}
+<table border=1>
+{% for prod in content %}
+     <tr>
+       <td> {{ prod.prodname }} </td>
+       <td> {{ prod.prodcode }} </td>
+       <td> {{ prod.vendor }} </td>
+       <td> {{ prod.saledate }} </td>
+       <td> {{ prod.quantity }} </td>
+       <td> {{ prod.unitcost }} </td>
+<<<<<<< HEAD
+       <td> {{ prod.totlcost }} </td>
+=======
+       <td> {{ prod.totalcost }} </td>
+>>>>>>> 216a4bb38ccbaad1f656463f8a37f6a95f916389
+     </tr> 
+      {% endfor %}
+
+
+
+{% endblock %}
+{% endautoescape %}

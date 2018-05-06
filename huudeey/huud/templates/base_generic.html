@@ -1,0 +1,58 @@
+
+<<<<<<< HEAD
+{% extends "admin/base.html" %}
+
+
+
+=======
+>>>>>>> 216a4bb38ccbaad1f656463f8a37f6a95f916389
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  {% block title %}<title>Huudheey App</title>{% endblock %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <!-- Add additional CSS in static file -->
+  {% load static %}
+<<<<<<< HEAD
+
+  {% load i18n %}
+ <link rel="stylesheet" href="{% static 'css/styles.css' %}">  
+=======
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+>>>>>>> 216a4bb38ccbaad1f656463f8a37f6a95f916389
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-sm-2">
+      {% block sidebar %}
+      <ul class="sidebar-nav">
+          <li><a href="{% url 'index' %}">Home</a></li>
+<<<<<<< HEAD
+          <li><a href="{% url 'saledate' %}">Search by Name </a></li>
+          <li><a href="{% url 'searchdatesale' %}">Search by date</a></li>
+          <li><a href="{% url 'searchcost' %}">Search by value </a></li>
+=======
+          <li><a href="{% url 'saledate' %}">Search</a></li>
+          <li><a href="{% url 'searchdatesale' %}">Search by date</a></li>
+>>>>>>> 216a4bb38ccbaad1f656463f8a37f6a95f916389
+      </ul>
+     {% endblock %}
+      </div>
+      <div class="col-sm-10 ">
+      {% block content %}{% endblock %}
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

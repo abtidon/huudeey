@@ -1,0 +1,66 @@
+{% extends "base_generic.html" %}
+
+<<<<<<< HEAD
+
+    </style>
+                <script src="static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+                <script type="text/javascript" src="staticjs/jquery-ui.js"></script>
+                    <script type="text/javascript" src="static/js/jquery-ui.min.js"></script>
+                    <script type="text/javascript" src="static/js/bootstrap.js"></script>
+                    <link type="text/css" href="static/css/cupertino/jquery-ui.css" rel="stylesheet" />
+
+   <script>
+
+
+  $(function() {
+
+    if (!Modernizr.inputtypes.date) {
+
+        $( ".datepicker" ).datepicker({
+            inline: true
+        });
+        // Hover states on the static widgets
+        $( ".#dialog-link, #icons li" ).hover(
+            function() {
+                $( this ).addClass( "ui-state-hover" );
+            },
+            function() {
+                $( this ).removeClass( "ui-state-hover" );
+            }
+        );
+
+    }
+});
+    </script>
+
+
+
+{% block content %}
+
+
+<form  method="post">
+	{% csrf_token %}
+    <label for="search_date">Enter From Date: </label>
+    <input id="fdate" type="text" name="fdate" value="2018-02-01">
+     <labe2 for="search_edate">Enter End Date: </labe2>
+    <input id="edate" type="text" name="edate" value="2018-03-01">
+    <input type="submit" value="OK">
+</form>
+
+{% endblock %}
+
+
+
+=======
+{% block content %}
+
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+
+    <input type="submit" value="Submit" />
+</form>
+
+{% endblock %}
+>>>>>>> 216a4bb38ccbaad1f656463f8a37f6a95f916389

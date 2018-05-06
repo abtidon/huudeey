@@ -1,0 +1,16 @@
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Huudeey application</h1>
+
+  <p>Ku soo dhawaw <em>Huudeey web application</em>, oo la tijaabinaayo </p>
+
+<h2>Xog badalmaysa </h2>
+
+  <p>Bundda tiradeeda:</p>
+  <ul>
+    <li><strong>Bundad tiro:</strong> {{ num_sales }}</li>
+  </ul>
+
+{% endblock %}

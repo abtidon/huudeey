@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Sale List</h1>
+    {% if prodsale_list %}
+
+    <table border="1">
+      {% for sales in prodsale_list %}
+       <tr>
+           <td> {{ sales.prodsale_id }} </td>
+           <td> {{ sales.prodname }} </td>
+           <td> {{ sales.prodcode }} </td>
+           <td> {{ sales.vendor }} </td>
+           <td> {{ sales.saledate }} </td>
+           <td> {{ sales.quantity }} </td>
+           <td> {{ sales.unitcost }} </td>
+           <td> {{ sales.totlcost }} </td>
+       </tr>
+      {% endfor %}
+    </table>
+
+    {% else %}
+      <p>There are no books in the library.</p>
+    {% endif %}       
+{% endblock %}
